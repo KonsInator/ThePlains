@@ -1,7 +1,10 @@
 package gameobjects;
 
-
-public class StaticGameObject extends  GameObject{
+/**
+ * {@inheritDoc}
+ * {@link GameObject} with {@link StaticPosition}
+ */
+public class StaticGameObject extends GameObject{
     private StaticPosition position;
 
     @Deprecated
