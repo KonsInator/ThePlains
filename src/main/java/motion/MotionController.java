@@ -1,7 +1,6 @@
 package motion;
 
 import gameobjects.DynamicPosition;
-import gameobjects.ObjectPosition;
 
 public class MotionController {
 

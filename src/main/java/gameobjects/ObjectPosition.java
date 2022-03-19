@@ -3,7 +3,7 @@ package gameobjects;
 import java.awt.*;
 
 /**
- * rectangle
+ * rectangle representation with top-left and bottom-right corner
  */
 public interface ObjectPosition {
 

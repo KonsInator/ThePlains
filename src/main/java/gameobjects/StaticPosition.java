@@ -2,6 +2,9 @@ package gameobjects;
 
 import java.awt.*;
 
+/**
+ * {@inheritDoc}
+ */
 public class StaticPosition implements ObjectPosition {
 
     protected Point topLeft;
