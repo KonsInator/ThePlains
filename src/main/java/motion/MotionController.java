@@ -7,10 +7,10 @@ public class MotionController {
     private int velocity = 0; // points per ms
     private float[] direction = {0, 0}; // should be between -1 and 1
     private long timeOfLastUpdate = 0;
-    private final Position movingHandle;
+    private final Position position;
 
-    public MotionController(Position movingHandle) {
-        this.movingHandle = movingHandle;
+    public MotionController(Position position) {
+        this.position = position;
     }
 
     /**
@@ -27,7 +27,7 @@ public class MotionController {
         timeOfLastUpdate = now;
 
         long way = velocity*timeSinceLastUpdate;
-        movingHandle.move((int)(way*direction[0]), (int)(way*direction[1]));
+        position.move((int)(way*direction[0]), (int)(way*direction[1]));
     }
 
     /**
