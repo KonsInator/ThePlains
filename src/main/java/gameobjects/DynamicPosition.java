@@ -11,6 +11,9 @@ public class DynamicPosition implements ObjectPosition {
     protected Point topLeft;
     protected Point bottomRight;
 
+    @Deprecated
+    public DynamicPosition() {}
+
     public DynamicPosition(Point topLeft, Point bottomRight) {
         this.topLeft = topLeft;
         this.bottomRight = bottomRight;

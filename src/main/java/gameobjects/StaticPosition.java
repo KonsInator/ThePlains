@@ -10,6 +10,9 @@ public class StaticPosition implements ObjectPosition {
     protected Point topLeft;
     protected Point bottomRight;
 
+    @Deprecated
+    public StaticPosition() {}
+
     public StaticPosition(Point topLeft, Point bottomRight) {
         this.topLeft = topLeft;
         this.bottomRight = bottomRight;
