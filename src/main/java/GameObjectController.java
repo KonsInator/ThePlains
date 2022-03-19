@@ -1,16 +1,16 @@
-package gameobjects;
+import gameobjects.DynamicGameObject;
+import gameobjects.StaticGameObject;
 
-import javax.swing.*;
 import java.util.ArrayList;
 
 public class GameObjectController {
 
-    private JPanel panel;
+    private GamePanel panel;
 
     private ArrayList<StaticGameObject> staticObjects = new ArrayList<>();
     private ArrayList<DynamicGameObject> dynamicObjects = new ArrayList<>();
 
-    public GameObjectController(JPanel panel) {
+    public GameObjectController(GamePanel panel) {
         this.panel = panel;
     }
 

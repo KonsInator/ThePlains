@@ -1,5 +1,3 @@
-import gameobjects.GameObjectController;
-
 import javax.swing.*;
 
 public class MainFrame extends JFrame {
@@ -8,7 +6,7 @@ public class MainFrame extends JFrame {
 
     MainFrame() {
 
-        JPanel gamePanel = new JPanel();
+        GamePanel gamePanel = new GamePanel();
 
         objectController = new GameObjectController(gamePanel);
 
