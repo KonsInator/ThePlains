@@ -1,6 +1,7 @@
 package gameobjects;
 
 import javax.swing.*;
+import java.util.Objects;
 
 /**
  * object or entity with texture in game
@@ -12,6 +13,10 @@ public abstract class GameObject {
 
     public ObjectId getId() {
         return id;
+    }
+
+    public boolean hasId(ObjectId id) {
+        return Objects.equals(id, this.id);
     }
 
     public ImageIcon getTexture() {
