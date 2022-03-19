@@ -2,6 +2,9 @@ package gameobjects;
 
 import java.util.concurrent.atomic.AtomicLong;
 
+/**
+ * unique ID for {@link GameObject}s based on {@link AtomicLong}
+ */
 public class ObjectId extends AtomicLong {
     private static AtomicLong idCounter = new AtomicLong();
 
