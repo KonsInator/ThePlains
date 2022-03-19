@@ -2,22 +2,14 @@ package gameobjects;
 
 import java.awt.*;
 
-/**
- * movable rectangle
- */
-public class Position {
+public class DynamicPosition implements ObjectPosition {
 
-    private Point topLeft;
-    private Point bottomRight;
+    protected Point topLeft;
+    protected Point bottomRight;
 
-    public Position(Point topLeft, Point bottomRight) {
+    public DynamicPosition(Point topLeft, Point bottomRight) {
         this.topLeft = topLeft;
         this.bottomRight = bottomRight;
-    }
-
-    public void move(int dx, int dy) {
-        topLeft.translate(dx, dy);
-        bottomRight.translate(dx, dy);
     }
 
     public Point getTopLeft() {
@@ -34,5 +26,10 @@ public class Position {
 
     public void setBottomRight(Point bottomRight) {
         this.bottomRight = bottomRight;
+    }
+
+    public void move(int dx, int dy) {
+        topLeft.translate(dx, dy);
+        bottomRight.translate(dx, dy);
     }
 }

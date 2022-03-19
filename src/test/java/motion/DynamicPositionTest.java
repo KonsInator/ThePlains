@@ -1,6 +1,6 @@
 package motion;
 
-import gameobjects.Position;
+import gameobjects.DynamicPosition;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -8,13 +8,13 @@ import java.awt.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class PositionTest {
+class DynamicPositionTest {
 
-    Position position;
+    DynamicPosition position;
 
     @BeforeEach
     public void setUp() {
-        position = new Position(new Point(0, 0), new Point(1, 2));
+        position = new DynamicPosition(new Point(0, 0), new Point(1, 2));
     }
 
     @Test
