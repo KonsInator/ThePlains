@@ -2,6 +2,9 @@ package gameobjects;
 
 import javax.swing.*;
 
+/**
+ * object or entity with texture in game
+ */
 public abstract class GameObject {
     private ImageIcon texture;
 
