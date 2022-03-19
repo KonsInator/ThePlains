@@ -12,4 +12,6 @@ public abstract class GameObject {
     public void setTexture(ImageIcon texture) {
         this.texture = texture;
     }
+
+    public abstract ObjectPosition getPosition();
 }
