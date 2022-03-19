@@ -1,16 +1,16 @@
-package motion;
+package gameobjects;
 
 import java.awt.*;
 
 /**
  * movable rectangle
  */
-public class MovingHandle {
+public class Position {
 
     private Point topLeft;
     private Point bottomRight;
 
-    public MovingHandle(Point topLeft, Point bottomRight) {
+    public Position(Point topLeft, Point bottomRight) {
         this.topLeft = topLeft;
         this.bottomRight = bottomRight;
     }

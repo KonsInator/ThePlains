@@ -1,13 +1,15 @@
 package motion;
 
+import gameobjects.Position;
+
 public class MotionController {
 
     private int velocity = 0; // points per ms
     private float[] direction = {0, 0}; // should be between -1 and 1
     private long timeOfLastUpdate = 0;
-    private final MovingHandle movingHandle;
+    private final Position movingHandle;
 
-    public MotionController(MovingHandle movingHandle) {
+    public MotionController(Position movingHandle) {
         this.movingHandle = movingHandle;
     }
 
