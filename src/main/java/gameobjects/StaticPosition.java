@@ -1,23 +1,21 @@
-package motion;
+package gameobjects;
 
 import java.awt.*;
 
 /**
- * movable rectangle
+ * {@inheritDoc}
  */
-public class MovingHandle {
+public class StaticPosition implements ObjectPosition {
 
-    private Point topLeft;
-    private Point bottomRight;
+    protected Point topLeft;
+    protected Point bottomRight;
 
-    public MovingHandle(Point topLeft, Point bottomRight) {
+    @Deprecated
+    public StaticPosition() {}
+
+    public StaticPosition(Point topLeft, Point bottomRight) {
         this.topLeft = topLeft;
         this.bottomRight = bottomRight;
-    }
-
-    public void move(int dx, int dy) {
-        topLeft.translate(dx, dy);
-        bottomRight.translate(dx, dy);
     }
 
     public Point getTopLeft() {
