@@ -1,5 +1,6 @@
 package motion;
 
+import gameobjects.DynamicPosition;
 import gameobjects.ObjectPosition;
 
 public class MotionController {
@@ -7,9 +8,9 @@ public class MotionController {
     private int velocity = 0; // points per ms
     private float[] direction = {0, 0}; // should be between -1 and 1
     private long timeOfLastUpdate = 0;
-    private final ObjectPosition position;
+    private final DynamicPosition position;
 
-    public MotionController(ObjectPosition position) {
+    public MotionController(DynamicPosition position) {
         this.position = position;
     }
 
