@@ -13,5 +13,21 @@ public abstract class GameObject {
         this.texture = texture;
     }
 
+    public int getWidth() {
+        if (texture == null) {
+            return 0;
+        } else {
+            return texture.getIconWidth();
+        }
+    }
+
+    public int getHeight() {
+        if (texture == null) {
+            return 0;
+        } else {
+            return texture.getIconHeight();
+        }
+    }
+
     public abstract ObjectPosition getPosition();
 }
