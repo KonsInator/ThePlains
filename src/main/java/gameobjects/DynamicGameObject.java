@@ -11,6 +11,7 @@ public class DynamicGameObject extends GameObject{
     public DynamicGameObject() {}
 
     public DynamicGameObject(DynamicPosition position) {
+        this.id = ObjectId.getUniqueId();
         this.position = position;
     }
 

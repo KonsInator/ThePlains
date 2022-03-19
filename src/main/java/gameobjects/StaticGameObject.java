@@ -11,6 +11,7 @@ public class StaticGameObject extends GameObject{
     public StaticGameObject() {}
 
     public StaticGameObject(StaticPosition position) {
+        this.id = ObjectId.getUniqueId();
         this.position = position;
     }
 

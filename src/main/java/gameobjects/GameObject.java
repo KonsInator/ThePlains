@@ -1,14 +1,18 @@
 package gameobjects;
 
 import javax.swing.*;
-import java.util.UUID;
 
 /**
  * object or entity with texture in game
  */
 public abstract class GameObject {
 
+    protected ObjectId id;
     private ImageIcon texture;
+
+    public ObjectId getId() {
+        return id;
+    }
 
     public ImageIcon getTexture() {
         return texture;
