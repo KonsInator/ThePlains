@@ -6,6 +6,7 @@ import javax.swing.*;
  * object or entity with texture in game
  */
 public abstract class GameObject {
+
     private ImageIcon texture;
 
     public ImageIcon getTexture() {
