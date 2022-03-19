@@ -1,4 +1,4 @@
-package motion;
+package gameobjects;
 
 import gameobjects.DynamicPosition;
 import org.junit.jupiter.api.BeforeEach;
