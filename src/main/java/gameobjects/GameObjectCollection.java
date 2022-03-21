@@ -28,14 +28,17 @@ public class GameObjectCollection<GO extends GameObject> extends ArrayList<GO> {
     }
 
     /**
-     * remove a {@link GO} out of Collection with given id
+     * remove a {@link GO} out of collection with given id
      * @return {@literal true} if an element has been removed
      */
     public boolean removeById(ObjectId id) {
         return this.removeIf(go -> go.hasId(id));
     }
 
-
+    /**
+     * remove a {@link GO} out of collection with given id
+     * @return the removed element in {@link Optional<GO>}
+     */
     public Optional<GO> removeAndGetById(ObjectId id) {
         for (GO o : this) {
             if (o.hasId(id)) {
