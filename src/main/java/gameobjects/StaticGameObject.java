@@ -4,19 +4,9 @@ package gameobjects;
  * {@inheritDoc}
  * {@link GameObject} with {@link StaticPosition}
  */
-public class StaticGameObject extends GameObject{
-    private StaticPosition position;
-
-    @Deprecated
-    public StaticGameObject() {}
+public class StaticGameObject extends GameObject<StaticPosition>{
 
     public StaticGameObject(StaticPosition position) {
-        this.id = ObjectId.getUniqueId();
-        this.position = position;
-    }
-
-    @Override
-    public ObjectPosition getPosition() {
-        return position;
+        super(position);
     }
 }

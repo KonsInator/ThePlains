@@ -6,10 +6,19 @@ import java.util.Objects;
 /**
  * object or entity with texture in game
  */
-public abstract class GameObject {
+public abstract class GameObject<OP extends ObjectPosition> {
 
     protected ObjectId id;
-    private ImageIcon texture;
+    protected ImageIcon texture;
+    protected OP position;
+
+    @Deprecated
+    public GameObject() {}
+
+    public GameObject(OP position) {
+        this.id = ObjectId.getUniqueId();
+        this.position = position;
+    }
 
     public ObjectId getId() {
         return id;
@@ -43,5 +52,7 @@ public abstract class GameObject {
         }
     }
 
-    public abstract ObjectPosition getPosition();
+    public OP getPosition() {
+        return position;
+    }
 }
