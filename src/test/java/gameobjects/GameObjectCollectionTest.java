@@ -53,16 +53,16 @@ class GameObjectCollectionTest {
 
     @Test
     void testGetByIdContained() {
-        assertEquals(o1, collection.getById(id1));
-        assertEquals(o2, collection.getById(id2));
-        assertEquals(o3, collection.getById(id3));
-        assertEquals(o4, collection.getById(id4));
-        assertEquals(o5, collection.getById(id5));
+        assertEquals(Optional.of(o1), collection.getById(id1));
+        assertEquals(Optional.of(o2), collection.getById(id2));
+        assertEquals(Optional.of(o3), collection.getById(id3));
+        assertEquals(Optional.of(o4), collection.getById(id4));
+        assertEquals(Optional.of(o5), collection.getById(id5));
     }
 
     @Test
     void testGetByIdNotContained() {
-        assertNull(collection.getById(id6));
+        assertEquals(Optional.empty(), collection.getById(id6));
     }
 
     @Test

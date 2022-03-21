@@ -5561,9 +5561,7 @@
 											"_parent": {
 												"$ref": "AAAAAAF/raOQgg3os0g="
 											},
-											"type": {
-												"$ref": "AAAAAAF/rZr4dv6iw8I="
-											},
+											"type": "Optional<GO>",
 											"direction": "return"
 										}
 									]
@@ -7909,7 +7907,7 @@
 											"top": 378,
 											"width": 306.50146484375,
 											"height": 13,
-											"text": "+getById(id: ObjectId): GO",
+											"text": "+getById(id: ObjectId): Optional<GO>",
 											"horizontalAlignment": 0
 										},
 										{

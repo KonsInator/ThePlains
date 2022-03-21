@@ -18,13 +18,13 @@ public class GameObjectCollection<GO extends GameObject> extends ArrayList<GO> {
      * get a {@link GO} out of Collection with given id
      * @return {@link GO} with id or {@literal null} if there is no object with given id in collection
      */
-    public GO getById(ObjectId id) {
+    public Optional<GO> getById(ObjectId id) {
         for (GO o : this) {
            if (o.hasId(id)) {
-               return o;
+               return Optional.of(o);
            }
         }
-        return null;
+        return Optional.empty();
     }
 
     /**
