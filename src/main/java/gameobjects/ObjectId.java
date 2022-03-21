@@ -8,10 +8,17 @@ import java.util.concurrent.atomic.AtomicLong;
 public class ObjectId extends Number {
     private static AtomicLong idCounter = new AtomicLong();
 
+    /**
+     * Constructs an {@link ObjectId} with unique {@literal long} value
+     * @return {@link ObjectId} with unique {@literal long} value
+     */
     public static ObjectId getUniqueId() {
         return new ObjectId(idCounter.getAndIncrement());
     }
 
+    /**
+     * the id value
+     */
     private final long value;
 
     private ObjectId(long value) {
