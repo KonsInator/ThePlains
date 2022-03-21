@@ -2,6 +2,7 @@ package gameobjects;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Optional;
 
 /**
  * Collection of {@link GameObject}s
@@ -32,5 +33,16 @@ public class GameObjectCollection<GO extends GameObject> extends ArrayList<GO> {
      */
     public boolean removeById(ObjectId id) {
         return this.removeIf(go -> go.hasId(id));
+    }
+
+
+    public Optional<GO> removeAndGetById(ObjectId id) {
+        for (GO o : this) {
+            if (o.hasId(id)) {
+                this.remove(o);
+                return Optional.of(o);
+            }
+        }
+        return Optional.empty();
     }
 }

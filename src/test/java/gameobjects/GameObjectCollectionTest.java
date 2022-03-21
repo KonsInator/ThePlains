@@ -10,6 +10,7 @@ import org.mockito.junit.jupiter.MockitoSettings;
 import org.mockito.quality.Strictness;
 
 import java.util.List;
+import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.mock;
@@ -71,6 +72,16 @@ class GameObjectCollectionTest {
         assertTrue(collection.containsAll(List.of(o2, o3, o4, o5)));
 
         assertFalse(collection.removeById(id6));
+        assertTrue(collection.containsAll(List.of(o2, o3, o4, o5)));
+    }
+
+    @Test
+    void testRemoveAndGetById() {
+        assertEquals(Optional.of(o1), collection.removeAndGetById(id1));
+        assertFalse(collection.contains(o1));
+        assertTrue(collection.containsAll(List.of(o2, o3, o4, o5)));
+
+        assertEquals(Optional.empty(), collection.removeAndGetById(id6));
         assertTrue(collection.containsAll(List.of(o2, o3, o4, o5)));
     }
 }
