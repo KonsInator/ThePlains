@@ -2,11 +2,15 @@ import javax.swing.*;
 
 public class MainFrame extends JFrame {
 
-    CharacterPanel jumperPanel = new CharacterPanel();
+    GameObjectController objectController;
 
     MainFrame() {
 
-        this.add(jumperPanel);
+        GamePanel gamePanel = new GamePanel();
+
+        objectController = new GameObjectController(gamePanel);
+
+        this.add(gamePanel);
         this.setTitle("The Plains");
         this.setSize(900, 600);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
