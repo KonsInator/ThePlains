@@ -30,4 +30,24 @@ public abstract class ObjectPositionRepWithTLandBR implements ObjectPosition {
     public void setBottomRight(Point bottomRight) {
         this.bottomRight = bottomRight;
     }
+
+    @Override
+    public int rightX() {
+        return bottomRight.x;
+    }
+
+    @Override
+    public int leftX() {
+        return topLeft.x;
+    }
+
+    @Override
+    public int topY() {
+        return topLeft.y;
+    }
+
+    @Override
+    public int bottomY() {
+        return bottomRight.y;
+    }
 }

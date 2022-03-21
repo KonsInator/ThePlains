@@ -12,4 +12,12 @@ public interface ObjectPosition {
 
     Point getBottomRight();
     void setBottomRight(Point bottomRight);
+
+    int rightX();
+
+    int leftX();
+
+    int topY();
+
+    int bottomY();
 }
