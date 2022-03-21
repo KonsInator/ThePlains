@@ -22,13 +22,13 @@ public class ObjectId extends Number {
      * Method that should be used to get the actual long {@link #value} of the {@link ObjectId}
      * @return the actual long value
      */
-    public long get() {
+    public long value() {
         return value;
     }
 
     /**
      * {@inheritDoc}
-     * To get the actual {@link #value} in {@link long} use {@link #get()} instead!
+     * To get the actual {@link #value} in {@link long} use {@link #value()} instead!
      * @return {@link #value} cast to {@link int}
      */
     @Override
@@ -38,7 +38,7 @@ public class ObjectId extends Number {
 
     /**
      * {@inheritDoc}
-     * To get the actual {@link #value} use {@link #get()} instead!
+     * To get the actual {@link #value} use {@link #value()} instead!
      * @return
      */
     @Override
@@ -48,7 +48,7 @@ public class ObjectId extends Number {
 
     /**
      * {@inheritDoc}
-     * To get the actual {@link #value} in {@link long} use {@link #get()} instead!
+     * To get the actual {@link #value} in {@link long} use {@link #value()} instead!
      * @return {@link #value} cast to {@link float}
      */
     @Override
@@ -58,7 +58,7 @@ public class ObjectId extends Number {
 
     /**
      * {@inheritDoc}
-     * To get the actual {@link #value} in {@link long} use {@link #get()} instead!
+     * To get the actual {@link #value} in {@link long} use {@link #value()} instead!
      * @return {@link #value} cast to {@link double}
      */
     @Override

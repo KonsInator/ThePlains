@@ -8,11 +8,11 @@ class ObjectIdTest {
 
     @Test
     void getUniqueId() {
-        assertEquals(0L, ObjectId.getUniqueId().get());
-        assertEquals(1L, ObjectId.getUniqueId().get());
-        assertEquals(2L, ObjectId.getUniqueId().get());
-        assertEquals(3L, ObjectId.getUniqueId().get());
-        assertEquals(4L, ObjectId.getUniqueId().get());
-        assertEquals(5L, ObjectId.getUniqueId().get());
+        assertEquals(0L, ObjectId.getUniqueId().value());
+        assertEquals(1L, ObjectId.getUniqueId().value());
+        assertEquals(2L, ObjectId.getUniqueId().value());
+        assertEquals(3L, ObjectId.getUniqueId().value());
+        assertEquals(4L, ObjectId.getUniqueId().value());
+        assertEquals(5L, ObjectId.getUniqueId().value());
     }
 }
