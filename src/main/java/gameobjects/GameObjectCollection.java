@@ -28,8 +28,9 @@ public class GameObjectCollection<GO extends GameObject> extends ArrayList<GO> {
 
     /**
      * remove a {@link GO} out of Collection with given id
+     * @return {@literal true} if an element has been removed
      */
-    public void removeById(ObjectId id) {
-        this.removeIf(go -> go.hasId(id));
+    public boolean removeById(ObjectId id) {
+        return this.removeIf(go -> go.hasId(id));
     }
 }

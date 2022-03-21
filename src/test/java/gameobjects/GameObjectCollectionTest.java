@@ -66,11 +66,11 @@ class GameObjectCollectionTest {
 
     @Test
     void testRemoveById() {
-        collection.removeById(id1);
+        assertTrue(collection.removeById(id1));
         assertFalse(collection.contains(o1));
         assertTrue(collection.containsAll(List.of(o2, o3, o4, o5)));
 
-        collection.removeById(id6);
+        assertFalse(collection.removeById(id6));
         assertTrue(collection.containsAll(List.of(o2, o3, o4, o5)));
     }
 }
