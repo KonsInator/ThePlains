@@ -35,8 +35,8 @@ public class ObjectId extends Number {
 
     /**
      * {@inheritDoc}
-     * To get the actual {@link #value} in {@link long} use {@link #value()} instead!
-     * @return {@link #value} cast to {@link int}
+     * To get the actual {@link #value} in {@literal long} use {@link #value()} instead!
+     * @return {@link #value} cast to {@literal int}
      */
     @Override
     public int intValue() {
@@ -55,8 +55,8 @@ public class ObjectId extends Number {
 
     /**
      * {@inheritDoc}
-     * To get the actual {@link #value} in {@link long} use {@link #value()} instead!
-     * @return {@link #value} cast to {@link float}
+     * To get the actual {@link #value} in {@literal long} use {@link #value()} instead!
+     * @return {@link #value} cast to {@literal float}
      */
     @Override
     public float floatValue() {
@@ -65,8 +65,8 @@ public class ObjectId extends Number {
 
     /**
      * {@inheritDoc}
-     * To get the actual {@link #value} in {@link long} use {@link #value()} instead!
-     * @return {@link #value} cast to {@link double}
+     * To get the actual {@link #value} in {@literal long} use {@link #value()} instead!
+     * @return {@link #value} cast to {@literal double}
      */
     @Override
     public double doubleValue() {
