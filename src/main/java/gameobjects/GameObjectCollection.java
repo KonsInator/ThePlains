@@ -1,14 +1,14 @@
 package gameobjects;
 
-import java.util.ArrayList;
 import java.util.Collection;
+import java.util.HashSet;
 import java.util.Optional;
 
 /**
  * Collection of {@link GameObject}s
  * @param <GO>
  */
-public class GameObjectCollection<GO extends GameObject> extends ArrayList<GO> {
+public class GameObjectCollection<GO extends GameObject> extends HashSet<GO> {
 
     public GameObjectCollection(Collection<? extends GO> c) {
         super(c);
