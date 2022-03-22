@@ -7,10 +7,9 @@ public abstract class ObjectPositionRepWithTLandBR implements ObjectPosition {
     protected Point topLeft;
     protected Point bottomRight;
 
-    @Deprecated
-    public ObjectPositionRepWithTLandBR() {}
+    private ObjectPositionRepWithTLandBR() {}
 
-    public ObjectPositionRepWithTLandBR(Point topLeft, Point bottomRight) {
+    protected ObjectPositionRepWithTLandBR(Point topLeft, Point bottomRight) {
         this.topLeft = topLeft;
         this.bottomRight = bottomRight;
     }
