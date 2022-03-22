@@ -67,7 +67,7 @@ public class ObjectId extends Number {
      */
     @Override
     public float floatValue() {
-        return (float)value;
+        return value;
     }
 
     /**
@@ -77,6 +77,6 @@ public class ObjectId extends Number {
      */
     @Override
     public double doubleValue() {
-        return (double)value;
+        return value;
     }
 }
