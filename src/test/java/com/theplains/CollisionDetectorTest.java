@@ -61,87 +61,87 @@ class CollisionDetectorTest {
     }
 
     @Test
-    public void testCollisionOfIdenticalPosition() {
+    void testCollisionOfIdenticalPosition() {
         assertColliding(pos00sq, pos00sq);
     }
 
     @Test
-    public void testCollisionOfEnclosedPosition() {
+    void testCollisionOfEnclosedPosition() {
         assertColliding(pos0033, pos11sq);
     }
 
     @Test
-    public void testCollisionOfEnclosingPosition() {
+    void testCollisionOfEnclosingPosition() {
         assertColliding(pos11sq, pos0033);
     }
 
     @Test
-    public void testCollisionOfNonCollidingPositionRight() {
+    void testCollisionOfNonCollidingPositionRight() {
         assertNotColliding(pos00sq, pos30sq);
     }
 
     @Test
-    public void testCollisionOfCollidingPositionRightTouch() {
+    void testCollisionOfCollidingPositionRightTouch() {
         assertColliding(pos00sq, pos10sq);
     }
 
     @Test
-    public void testCollisionOfCollidingPositionLeftTouch() {
+    void testCollisionOfCollidingPositionLeftTouch() {
         assertColliding(pos10sq, pos00sq);
     }
 
     @Test
-    public void testCollisionOfNonCollidingPositionLeft() {
+    void testCollisionOfNonCollidingPositionLeft() {
         assertNotColliding(pos30sq, pos00sq);
     }
 
     @Test
-    public void testCollisionOfCollidingPositionRight0verlap() {
+    void testCollisionOfCollidingPositionRight0verlap() {
         assertColliding(pos0022, pos1032);
     }
 
     @Test
-    public void testCollisionOfCollidingPositionLeft0verlap() {
+    void testCollisionOfCollidingPositionLeft0verlap() {
         assertColliding(pos1032, pos0022);
     }
 
     @Test
-    public void testCollisionOfCollidingPositionBelowTouch() {
+    void testCollisionOfCollidingPositionBelowTouch() {
         assertColliding(pos00sq, pos01sq);
     }
 
     @Test
-    public void testCollisionOfNonCollidingPositionBelow() {
+    void testCollisionOfNonCollidingPositionBelow() {
         assertNotColliding(pos00sq, pos02sq);
     }
 
     @Test
-    public void testCollisionOfCollidingPositionBelowOverlap() {
+    void testCollisionOfCollidingPositionBelowOverlap() {
         assertColliding(pos0022, pos0123);
     }
 
     @Test
-    public void testCollisionOfCollidingPositionAboveTouch() {
+    void testCollisionOfCollidingPositionAboveTouch() {
         assertColliding(pos01sq, pos00sq);
     }
 
     @Test
-    public void testCollisionOfNonCollidingPositionAbove() {
+    void testCollisionOfNonCollidingPositionAbove() {
         assertNotColliding(pos02sq, pos00sq);
     }
 
     @Test
-    public void testCollisionOfCollidingPositionAboveOverlap() {
+    void testCollisionOfCollidingPositionAboveOverlap() {
         assertColliding(pos0123, pos0022);
     }
 
     @Test
-    public void testEdgeTouch() {
+    void testEdgeTouch() {
         assertColliding(pos00sq, pos11sq);
     }
 
     @Test
-    public void testDiagonalOverlap() {
+    void testDiagonalOverlap() {
         assertColliding(pos0022, pos1133);
     }
 }
