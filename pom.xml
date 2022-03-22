@@ -33,6 +33,12 @@
             <version>1.10.19</version>
             <scope>compile</scope>
         </dependency>
+
+        <dependency>
+            <groupId>org.jacoco</groupId>
+            <artifactId>jacoco-maven-plugin</artifactId>
+            <version>0.8.7</version>
+        </dependency>
     </dependencies>
 
     <properties>
@@ -41,9 +47,6 @@
 
         <sonar.organization>konsinator</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-        <sonar.coverage.jacoco.xmlReportPaths>
-            ./target/reports/jacoco.xml
-        </sonar.coverage.jacoco.xmlReportPaths>
     </properties>
 
     <build>
@@ -68,8 +71,6 @@
                             <formats>
                                 <format>XML</format>
                             </formats>
-                            <dataFile>target/jacoco.exec</dataFile>
-                            <outputDirectory>target/reports</outputDirectory>
                         </configuration>
                     </execution>
                 </executions>
