@@ -62,6 +62,8 @@
                             <goal>report</goal>
                         </goals>
                         <configuration>
+                            <dataFile>target/jacoco.exec</dataFile>
+                            <outputDirectory>target/code-reports</outputDirectory>
                             <formats>
                                 <format>XML</format>
                             </formats>
