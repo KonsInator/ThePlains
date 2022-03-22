@@ -24,13 +24,13 @@ class DynamicGameObjectTest {
     }
 
     @Test
-    public void testHasId() {
+    void testHasId() {
         assertTrue(o1.hasId(o1.getId()));
         assertFalse(o1.hasId(o2.getId()));
     }
 
     @Test
-    public void testGetPosition() {
+    void testGetPosition() {
         assertEquals(pos1, o1.getPosition());
     }
 
