@@ -31,22 +31,6 @@ jobs:
           path: ~/.m2
           key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
           restore-keys: ${{ runner.os }}-m2
-      - name: Verify
-        run: mvn verify
-      - name: JaCoCo Report
-        uses: Madrapps/jacoco-report@v1.2
-        with:
-          # Comma separated paths of the generated jacoco xml files
-          paths: target/code-reports/jacoco.xml
-          # Github personal token to add commits to Pull Request
-          token: ${{ secrets.GITHUB_TOKEN }}
-          # The minimum code coverage that is required to pass for overall project
-          min-coverage-overall: 70 # optional, default is 80
-          # The minimum code coverage that is required to pass for changed files
-          min-coverage-changed-files: 70 # optional, default is 80
-          # Optional title for the Pull Request comment
-          title: code-report # optional
-          # Run the action in debug mode and get debug logs printed in console
       - name: Build and analyze
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
