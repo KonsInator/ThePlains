@@ -1,5 +1,7 @@
-package com.theplains.gameobjects;
+package com.theplains;
 
+import com.theplains.CollisionDetector;
+import com.theplains.gameobjects.ObjectPosition;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

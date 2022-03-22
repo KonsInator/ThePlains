@@ -1,4 +1,6 @@
-package com.theplains.gameobjects;
+package com.theplains;
+
+import com.theplains.gameobjects.ObjectPosition;
 
 /**
  * class to detect collisions of {@link ObjectPosition}s
@@ -14,4 +16,6 @@ public class CollisionDetector {
                 pos1.bottomY() >= pos2.topY() &&
                 pos1.topY() <= pos2.bottomY();
     }
+
+    private CollisionDetector() {}
 }

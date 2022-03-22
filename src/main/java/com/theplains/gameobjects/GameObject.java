@@ -6,7 +6,7 @@ import java.util.Objects;
 /**
  * object or entity with texture in game
  */
-public abstract class GameObject<OP extends ObjectPosition> {
+public abstract class GameObject<P extends ObjectPosition> {
 
     /**
      * unique {@link ObjectId} to identify the {@link GameObject}
@@ -21,16 +21,15 @@ public abstract class GameObject<OP extends ObjectPosition> {
     /**
      * position on screen where the {@link #texture} is located
      */
-    protected OP position;
+    protected P position;
 
-    @Deprecated
-    public GameObject() {}
+    private GameObject() {}
 
     /**
      * Constructor
      * @param position {@link #position}
      */
-    public GameObject(OP position) {
+    protected GameObject(P position) {
         this.id = ObjectId.getUniqueId();
         this.position = position;
     }
@@ -74,7 +73,7 @@ public abstract class GameObject<OP extends ObjectPosition> {
         }
     }
 
-    public OP getPosition() {
+    public P getPosition() {
         return position;
     }
 }
