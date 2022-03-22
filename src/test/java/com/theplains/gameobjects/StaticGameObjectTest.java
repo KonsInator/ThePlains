@@ -24,7 +24,7 @@ class StaticGameObjectTest {
     }
 
     @Test
-    public void testHasId() {
+    void testHasId() {
         assertTrue(o1.hasId(o1.getId()));
         assertFalse(o1.hasId(o2.getId()));
     }
