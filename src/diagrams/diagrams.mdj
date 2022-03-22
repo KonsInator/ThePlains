@@ -71,7 +71,7 @@
 											"top": 102,
 											"width": 1487,
 											"height": 13,
-											"text": "gameobjects"
+											"text": "com.theplains.gameobjects"
 										},
 										{
 											"_type": "LabelView",
@@ -193,7 +193,7 @@
 											"left": -192,
 											"width": 114.8671875,
 											"height": 13,
-											"text": "(from gameobjects)"
+											"text": "(from com.theplains.gameobjects)"
 										},
 										{
 											"_type": "LabelView",
@@ -462,7 +462,7 @@
 											"top": -128,
 											"width": 114.8671875,
 											"height": 13,
-											"text": "(from gameobjects)"
+											"text": "(from com.theplains.gameobjects)"
 										},
 										{
 											"_type": "LabelView",
@@ -870,7 +870,7 @@
 											"top": 240,
 											"width": 114.8671875,
 											"height": 13,
-											"text": "(from gameobjects)"
+											"text": "(from com.theplains.gameobjects)"
 										},
 										{
 											"_type": "LabelView",
@@ -1159,7 +1159,7 @@
 											"top": -96,
 											"width": 114.8671875,
 											"height": 13,
-											"text": "(from gameobjects)"
+											"text": "(from com.theplains.gameobjects)"
 										},
 										{
 											"_type": "LabelView",
@@ -1426,7 +1426,7 @@
 											"top": -32,
 											"width": 114.8671875,
 											"height": 13,
-											"text": "(from gameobjects)"
+											"text": "(from com.theplains.gameobjects)"
 										},
 										{
 											"_type": "LabelView",
@@ -2166,7 +2166,7 @@
 											"top": 132,
 											"width": 114.8671875,
 											"height": 13,
-											"text": "(from gameobjects)"
+											"text": "(from com.theplains.gameobjects)"
 										},
 										{
 											"_type": "LabelView",
@@ -2730,7 +2730,7 @@
 											"top": 192,
 											"width": 114.8671875,
 											"height": 13,
-											"text": "(from gameobjects)"
+											"text": "(from com.theplains.gameobjects)"
 										},
 										{
 											"_type": "LabelView",
@@ -3771,7 +3771,7 @@
 											"top": -368,
 											"width": 114.8671875,
 											"height": 13,
-											"text": "(from gameobjects)"
+											"text": "(from com.theplains.gameobjects)"
 										},
 										{
 											"_type": "LabelView",
@@ -4126,7 +4126,7 @@
 											"top": -648,
 											"width": 111.97900390625,
 											"height": 13,
-											"text": "(from gameobjects)"
+											"text": "(from com.theplains.gameobjects)"
 										},
 										{
 											"_type": "LabelView",
@@ -4369,7 +4369,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "gameobjects",
+					"name": "com.theplains.gameobjects",
 					"ownedElements": [
 						{
 							"_type": "UMLClass",
@@ -5720,7 +5720,7 @@
 											"top": 310,
 											"width": 946,
 											"height": 13,
-											"text": "gameobjects"
+											"text": "com.theplains.gameobjects"
 										},
 										{
 											"_type": "LabelView",
@@ -5842,7 +5842,7 @@
 											"top": 574,
 											"width": 362.40673828125,
 											"height": 13,
-											"text": "(from gameobjects)"
+											"text": "(from com.theplains.gameobjects)"
 										},
 										{
 											"_type": "LabelView",
@@ -6137,7 +6137,7 @@
 											"top": 463,
 											"width": 212.06884765625,
 											"height": 13,
-											"text": "(from gameobjects)"
+											"text": "(from com.theplains.gameobjects)"
 										},
 										{
 											"_type": "LabelView",
@@ -6453,7 +6453,7 @@
 											"top": 196,
 											"width": 999,
 											"height": 13,
-											"text": "gameobjects"
+											"text": "com.theplains.gameobjects"
 										},
 										{
 											"_type": "LabelView",
@@ -6574,7 +6574,7 @@
 											"top": 270,
 											"width": 141.9970703125,
 											"height": 13,
-											"text": "(from gameobjects)"
+											"text": "(from com.theplains.gameobjects)"
 										},
 										{
 											"_type": "LabelView",
@@ -6841,7 +6841,7 @@
 											"top": 272,
 											"width": 234.96337890625,
 											"height": 13,
-											"text": "(from gameobjects)"
+											"text": "(from com.theplains.gameobjects)"
 										},
 										{
 											"_type": "LabelView",
@@ -7868,7 +7868,7 @@
 											"top": -376,
 											"width": 111.97900390625,
 											"height": 13,
-											"text": "(from gameobjects)"
+											"text": "(from com.theplains.gameobjects)"
 										},
 										{
 											"_type": "LabelView",
