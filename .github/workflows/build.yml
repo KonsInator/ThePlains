@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - master
+      - branch-*
       - code-smells
   pull_request:
     types: [opened, synchronize, reopened]
