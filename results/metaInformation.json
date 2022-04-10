@@ -1,0 +1,16 @@
+{
+  "total": 2,
+  "tools inspection": {
+    "Code Inspection": 2
+  },
+  "attributes": {
+    "vcs": {
+      "sarifIdea": {
+        "repositoryUri": "https://github.com/KonsInator/ThePlains",
+        "revisionId": "4c2e8a2a3f9d4fbed48a0e969dac3d23c97debfc",
+        "branch": "master"
+      }
+    },
+    "deviceId": "200820300000000-c578-1653-4366-829c62ef0d5b"
+  }
+}

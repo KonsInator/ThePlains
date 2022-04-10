@@ -1,0 +1,88 @@
+{
+  "libraries": [
+    {
+      "name": "Maven: org.junit.jupiter:junit-jupiter:5.8.2",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter/5.8.2/junit-jupiter-5.8.2.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: org.junit.jupiter:junit-jupiter-api:5.8.2",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: org.opentest4j:opentest4j:1.2.0",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: org.junit.platform:junit-platform-commons:1.8.2",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: org.apiguardian:apiguardian-api:1.1.2",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: org.junit.jupiter:junit-jupiter-params:5.8.2",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-params/5.8.2/junit-jupiter-params-5.8.2.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: org.junit.jupiter:junit-jupiter-engine:5.8.2",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: org.junit.platform:junit-platform-engine:1.8.2",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: org.mockito:mockito-core:4.3.1",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/org/mockito/mockito-core/4.3.1/mockito-core-4.3.1.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: net.bytebuddy:byte-buddy:1.12.7",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/net/bytebuddy/byte-buddy/1.12.7/byte-buddy-1.12.7.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: net.bytebuddy:byte-buddy-agent:1.12.7",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/net/bytebuddy/byte-buddy-agent/1.12.7/byte-buddy-agent-1.12.7.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: org.objenesis:objenesis:3.2",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/org/objenesis/objenesis/3.2/objenesis-3.2.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: org.mockito:mockito-junit-jupiter:4.3.1",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/org/mockito/mockito-junit-jupiter/4.3.1/mockito-junit-jupiter-4.3.1.jar!/"
+      ]
+    },
+    {
+      "name": "Maven: org.mockito:mockito-all:1.10.19",
+      "roots": [
+        "jar://$MAVEN_REPOSITORY$/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19.jar!/"
+      ]
+    }
+  ]
+}
