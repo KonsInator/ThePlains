@@ -9,3 +9,5 @@ _Branches, die von Sonarcloud analysiert werden sollen, müssen mit "branch-" od
 
 ## Qodana
 [![Qodana](https://github.com/KonsInator/ThePlains/actions/workflows/code_quality.yml/badge.svg?branch=master)](https://konsinator.github.io/ThePlains/)
+
+_Code Inspection_
